@@ -1,0 +1,10 @@
+<mat-toolbar color="primary">
+  <h1 mat-dialog-title>{{ title }}</h1>
+</mat-toolbar>
+
+<mat-dialog-content>
+  <p><mat-icon>{{ iconname }}</mat-icon>{{ message }}</p>
+</mat-dialog-content>
+<mat-dialog-actions>
+ <button mat-button (click)="dialogRef.close(true)">OK</button>
+</mat-dialog-actions>

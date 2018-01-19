@@ -1,0 +1,50 @@
+/* HeroDetailComponent's private CSS styles */
+label {
+    display: inline-block;
+    width: 3em;
+    margin: .5em 0;
+    color: #607D8B;
+    font-weight: bold;
+  }
+  input {
+    height: 2em;
+    font-size: 1em;
+    padding-left: .4em;
+  }
+ 
+  button:hover {
+    background-color: #cfd8dc;
+  }
+  button:disabled {
+    background-color: #eee;
+    color: #ccc;
+    cursor: auto;
+  }
+
+ 
+
+ 
+.receta {
+  padding: 0;
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  flex-shrink: 0;
+}
+.receta.contenedor
+{
+
+  position: relative;
+  padding-top: 300px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.button-row {
+
+  align-items: center;
+
+
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}

@@ -1,0 +1,18 @@
+<mat-grid-list cols={{numcol}} rowHeight="4:3">
+  <mat-grid-tile *ngFor="let receta of listaRecetas.recetas">
+    <a routerLink="/receta/{{receta.id}}">
+      <img src="{{receta.imagen}}" alt="receta {{receta.nombre}}" width='100%'>
+      <!-- new footer! -->
+      <mat-grid-tile-footer>
+        <h3 mat-line>{{receta.nombre}}</h3>
+      </mat-grid-tile-footer>
+    </a>
+  </mat-grid-tile>
+</mat-grid-list>
+<div class="button-row">
+
+
+  <button mat-mini-fab (click)="goAdd()">
+    <mat-icon aria-label="Añadir">add</mat-icon>
+  </button>
+</div>
